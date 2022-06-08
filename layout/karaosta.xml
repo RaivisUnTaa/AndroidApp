@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/karaostabilde"
+    android:orientation="vertical"
+    tools:context=".Galvena_lapa">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:clickable="true"
+        android:padding="40dp">
+
+        <Button
+            android:id="@+id/karaostaback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/aroowleft"
+            android:backgroundTint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/menu_yellow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8a070707"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/karosta"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karosta is a miraculous, paradoxical and unique place not only in the context of Latvian, but also world history and architecture. Karosta is the largest historical military territory in the Baltics and occupies almost one third of the entire territory of Liepaja."
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_marginStart="40dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/karostamenu1"
+                tools:ignore="ContentDescription,RtlHardcoded,ImageContrastCheck" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/karostamenu2"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/karosta"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/karaostamaps"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/button"
+                android:text="view on map"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/navigatekaraosta"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Navigate"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

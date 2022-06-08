@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/menu_yellow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/explore"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:autofillHints=""
+            android:paddingStart="30dp"
+            android:text="@string/search_destination"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textSize="14sp"
+            tools:ignore="LabelFor,RtlSymmetry,TextFields" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/searching"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="88dp"
+                android:background="@drawable/nature"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="88dp"
+                android:background="@drawable/taka"
+                android:layout_gravity="center"
+                android:layout_marginStart="22dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="88dp"
+                android:background="@drawable/pludmale"
+                android:layout_gravity="center"
+                android:layout_marginStart="22dp"
+                tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popular"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/kanieraezers"
+            android:layout_width="130dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/kanieruezerataka"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/karaosta"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="150dp"
+            android:src="@drawable/karosta"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/kemerutirelis"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="270dp"
+            android:src="@drawable/kemerutirelis"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_shape"
+        android:backgroundTint="@color/holo_blue_optimal">
+
+        <Button
+            android:id="@+id/weather"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_weather"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="100dp"
+            android:background="@drawable/ic_baseline_map_24"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/trips"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="180dp"
+            android:background="@drawable/trips"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/usersettings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="260dp"
+            android:background="@drawable/ic_account"
+            android:backgroundTint="@color/white"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
